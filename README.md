@@ -4,23 +4,30 @@ This project is a **Medical Records Management System** that stores patient info
 
 ## Features
 
-- Store patient details including medical conditions, treatments, and insurance info.
-- Track prior authorizations for treatments and their status.
-- View and manage patients' medical records efficiently.
-
-## Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Project Setup](#project-setup)
-- [Database Schema](#database-schema)
+- Store patient details, including medical conditions, treatments, and insurance info.
+- Track prior authorizations for treatments with statuses: pending, approved, or denied.
+- Paginated patient list with optimized data fetching.
+- In-House Authentication with **Next-Auth**.
+- Responsive and modern UI built with **Shadcn UI** components.
+- Full-stack development using **Next.js** for the frontend and **Express.js** for the backend.
+- Backend API supports CRUD operations for managing patients and authorization requests.
 
 ## Technologies Used
 
-- **Node.js**: Backend runtime environment
-- **Express.js**: Web framework for building RESTful APIs
-- **MongoDB**: NoSQL database to store patient records
-- **Mongoose**: MongoDB ORM for schema modeling and database interactions
-- **Postman**: API testing
+### Frontend
+
+- **Next.js**: Full-stack React framework for building server-rendered apps.
+- **React Query**: Data fetching and caching library for managing server state in React.
+- **Shadcn**: Modern UI components styled with TailwindCSS.
+- **Pagination**: For efficient navigation of large datasets (patients).
+
+### Backend
+
+- **Node.js**: Backend runtime environment.
+- **Express.js**: Web framework for building RESTful APIs.
+- **MongoDB**: NoSQL database to store patient records.
+- **Mongoose**: MongoDB ORM for schema modeling and database interactions.
+- **Postman**: API testing.
 
 ## Project Setup
 
@@ -36,16 +43,26 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/mehraankush/medical-records-management-system.git
-   cd medical-records-management-system
+   git clone https://github.com/mehraankush/basysFE.git
+   cd basysFE
    
 Install the dependencies:
      ```bash
           npm install
-          MONGODB_URI=mongodb://localhost:27017/medical-db
-          PORT=3000
           npm run dev
      ```
+
+##.env
+```bash
+NEXT_PUBLIC_BASE_BACKEND_URL="http://localhost:4000/api"
+
+
+GOOGLE_CLIENT_ID = 286-o5gkmi.googleusercontent.com
+GOOGLE_CLIENT_SECRET = GSPX-7s6wGuUq
+
+NEXTAUTH_URL=http://localhost:3000
+AUTH_SECRET="JJmX10YqDXiZF2LHRIvhgrOnGOJRJJGycAnvpCyhbik="
+```
      
 Database Schema :
 ```javascript
