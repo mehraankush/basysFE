@@ -15,7 +15,6 @@ import {
 import { useRouter } from "next/navigation";
 import { logOut } from "../../../../action/auth";
 import { Session } from "next-auth";
-import Image from "next/image";
 
 export function UserNav({ session }: {
     session: Session

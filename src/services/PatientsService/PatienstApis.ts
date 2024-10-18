@@ -10,7 +10,7 @@ export const getAllPatients = async (currentTab: string, currentPage:number) => 
     }
 };
 
-export const createPriorAuth = async (data: any) => {
+export const createPriorAuth = async (data: unknown) => {
     try {
         console.log("INSIDE Create Auth", data)
         const res = await BaseUrl.post(`/authorizations`, data);
