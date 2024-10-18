@@ -20,9 +20,6 @@ This project is a **Medical Records Management System** that stores patient info
 - **Express.js**: Web framework for building RESTful APIs
 - **MongoDB**: NoSQL database to store patient records
 - **Mongoose**: MongoDB ORM for schema modeling and database interactions
-- **Docker**: Containerization for development and production
-- **Jest**: Unit testing framework
-- **Swagger**: API documentation
 - **Postman**: API testing
 
 ## Project Setup
